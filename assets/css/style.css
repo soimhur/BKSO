@@ -64,13 +64,8 @@
         width: 100%;
         min-height: 500px;
     }
-    
-    .header {
-        background-color: black;
-        color: white;
-        height: 1000px;
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
-    
-    .location {
-        background-color: black;
-        color: white;
