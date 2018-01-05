@@ -1,0 +1,19 @@
+{
+  "name": "@soimhur/sokeun-blog",
+  "version": "1.0.0",
+  "description": "Soim & Beobkeun Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soimhur/sokeun-blog.git"
+  },
+  "author": "Soim Hur <soimhur@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soimhur/sokeun-blog/issues"
+  },
+  "homepage": "https://github.com/soimhur/sokeun-blog#readme"
+}
