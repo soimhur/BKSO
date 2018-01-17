@@ -16,7 +16,5 @@
     "url": "https://github.com/soimhur/sokeun-blog/issues"
   },
   "homepage": "https://github.com/soimhur/sokeun-blog#readme",
-  "devDependencies": {
-    "bootstrap": "^3.3.7"
-  }
+  "devDependencies": {}
 }
