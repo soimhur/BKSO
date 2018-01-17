@@ -16,5 +16,7 @@
     "url": "https://github.com/soimhur/sokeun-blog/issues"
   },
   "homepage": "https://github.com/soimhur/sokeun-blog#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
