@@ -33,3 +33,10 @@ gulp.task("build-js", function() {
 
 //concatenate gulp tasks
 gulp.task("default", ["build-css", "build-js"]);
+
+//define watch task in terminal
+gulp.task("watch", function(){
+	watch("src/**/**.*", batch(function(events, done){
+		gulp.start("default", done);	
+	}));
+});
