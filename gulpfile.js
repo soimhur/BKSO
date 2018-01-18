@@ -2,6 +2,8 @@ var gulp = require("gulp");
 
 //import gulp libraries
 var concat = require("gulp-concat");
+var watch = require("gulp-watch");
+var batch = require("gulp-batch");
 
 //define config
 var config = {
@@ -10,7 +12,7 @@ var config = {
 
 //build css task
 gulp.task("build-css", function() {
-    gulp.src(
+  gulp.src(
       [
         "src/custom.css"
       ]
@@ -22,21 +24,21 @@ gulp.task("build-css", function() {
 //build js task
 gulp.task("build-js", function() {
   gulp.src(
-    [
-      config.vendor + "jquery/dist/jquery.js",
-      "src/custom.js"
-    ]
-  )
-  .pipe(concat("style.js"))
-  .pipe(gulp.dest("public"))
+      [
+        config.vendor + "jquery/dist/jquery.js",
+        "src/custom.js"
+      ]
+    )
+    .pipe(concat("style.js"))
+    .pipe(gulp.dest("public"))
 })
 
 //concatenate gulp tasks
 gulp.task("default", ["build-css", "build-js"]);
 
 //define watch task in terminal
-gulp.task("watch", function(){
-	watch("src/**/**.*", batch(function(events, done){
-		gulp.start("default", done);	
-	}));
+gulp.task("watch", function() {
+  watch("src/**/**.*", batch(function(events, done) {
+    gulp.start("default", done);
+  }));
 });
