@@ -4,6 +4,9 @@ var gulp = require("gulp");
 var concat = require("gulp-concat");
 var watch = require("gulp-watch");
 var batch = require("gulp-batch");
+var postcss = require("gulp-postcss");
+var precss = require("precss");
+var sass = require("gulp-sass");
 
 //define config
 var config = {
@@ -17,7 +20,12 @@ gulp.task("build-css", function() {
         "src/custom.css"
       ]
     )
-    .pipe(concat("style.css"))
+    .pipe(
+      postcss([
+        precss()
+      ])
+    )
+    .pipe(concat("master.css"))
     .pipe(gulp.dest("public"))
 })
 
@@ -29,7 +37,7 @@ gulp.task("build-js", function() {
         "src/custom.js"
       ]
     )
-    .pipe(concat("style.js"))
+    .pipe(concat("master.js"))
     .pipe(gulp.dest("public"))
 })
 
