@@ -7,7 +7,7 @@ var batch = require("gulp-batch");
 var postcss = require("gulp-postcss");
 var precss = require("precss");
 var sass = require("gulp-sass");
-var autoprefixer = require('gulp-autoprefixer');
+var prefixer = require('gulp-autoprefixer');
 
 //define config
 var config = {
@@ -21,7 +21,7 @@ gulp.task("build-css", function() {
         "src/custom.css"
       ]
     )
-    .pipe(autoprefixer())
+    .pipe(prefixer())
     .pipe(sass())
     .pipe(concat("master.css"))
     .pipe(gulp.dest("public"))
