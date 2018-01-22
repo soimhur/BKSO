@@ -18,7 +18,7 @@ var config = {
 gulp.task("build-css", function() {
   gulp.src(
       [
-        "src/custom.css"
+        "src/scss/index.scss"
       ]
     )
     .pipe(prefixer())

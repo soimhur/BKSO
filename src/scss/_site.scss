@@ -1,0 +1,54 @@
+@import 'color';
+
+/* GLOBAL SITE SETTINGS */
+
+body {
+  background-color: $white;
+  color: $main-blue;
+}
+
+
+/* ALIGN */
+
+.text-align--left {
+  text-align: left;
+}
+
+.text-align--center {
+  text-align: center;
+}
+
+.text-align--right {
+  text-align: right;
+}
+
+
+/* LAYOUT */
+
+.section-w {
+  background-color: $white;
+}
+
+.section-g {
+  background-color: $light-grey;
+}
+
+.section-b {
+  background-color: $main-blue;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+
+/* TEXT COLOR */
+
+.text-w {
+  color: $white;
+}
