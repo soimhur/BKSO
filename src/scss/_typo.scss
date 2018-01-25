@@ -3,7 +3,7 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 
-$fonts: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+$fonts: 'Playfair Display', 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 $handwriting-font: 'Meddon', cursive;
 $font-size__base: 1rem;
 $font-size__small: 0.75rem;
@@ -16,11 +16,10 @@ html {
   line-height: 1.7;
 }
 
-// body {
-// 	font-family: $fonts;
-// 	letter-spacing: -0.03em;
-//   word-break: keep-all;
-// }
+body {
+	font-family: $fonts;
+  word-break: keep-all;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
