@@ -4,6 +4,9 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url("https://fonts.googleapis.com/css?family=Meddon");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900");
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -409,3 +412,20 @@ body {
   color: #FFFFFF; }
 
 /* COLORS */
+/* FONT SIZES */
+html {
+  font-size: 16px;
+  line-height: 1.7; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0; }
+
+/* LINKS */
+a {
+  color: inherit;
+  outline: none; }
+
+/* HANDWRITING */
+.title_handwriting {
+  font-family: 'Meddon', cursive; }
