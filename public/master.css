@@ -6,6 +6,7 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Meddon");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900");
+@import url("https://fonts.googleapis.com/css?family=Meddon|Mrs+Saint+Delafield");
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 html {
   font-family: sans-serif;
@@ -402,34 +403,73 @@ body {
 
 .container {
   max-width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 1rem; }
 
 .full-height {
   height: 100vh; }
 
-/* TEXT COLOR */
-.text-w {
-  color: #FFFFFF; }
+/* COLORS */
+.text-box {
+  max-width: 90%;
+  margin: 5rem auto 0; }
+  .text-box:last-child {
+    margin-top: 2rem;
+    padding-bottom: 4rem; }
 
 /* COLORS */
+/* IMPORT FONTS */
 /* FONT SIZES */
 html {
-  font-size: 16px;
-  line-height: 1.7; }
+  font-size: 13px;
+  line-height: 1.75; }
 
 body {
   font-family: "Playfair Display", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
-  word-break: keep-all; }
+  word-break: keep-all;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
-  margin: 0; }
+  margin: 0;
+  letter-spacing: 0.02em; }
+
+p {
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  margin: 0.5em 0; }
 
 /* LINKS */
 a {
   color: inherit;
   outline: none; }
 
-/* HANDWRITING */
-.title_handwriting {
-  font-family: 'Meddon', cursive; }
+/* FONT COLOR */
+.text-w {
+  color: #FFFFFF; }
+
+/* FONT STYLE */
+.text-writing {
+  font-family: "Meddon", cursive;
+  font-size: 4.5rem;
+  padding-top: 6rem;
+  font-weight: normal; }
+  .text-writing > div:first-child {
+    text-align: left; }
+  .text-writing > div:last-child {
+    text-align: right;
+    padding-right: 0.2rem;
+    margin-top: -1.5rem; }
+    .text-writing > div:last-child > span:first-child {
+      font-size: 2.2rem;
+      padding: 0 .2rem; }
+
+.bold {
+  font-weight: 700; }
