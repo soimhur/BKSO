@@ -5,6 +5,14 @@
 body {
   background-color: $white;
   color: $main-blue;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 

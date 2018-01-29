@@ -379,7 +379,14 @@ th {
 /* GLOBAL SITE SETTINGS */
 body {
   background-color: #FFFFFF;
-  color: #0C1924; }
+  color: #0C1924;
+  background-color: whitesmoke;
+  overflow-x: hidden; }
+
+main {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto; }
 
 /* ALIGN */
 .text-align--left {
