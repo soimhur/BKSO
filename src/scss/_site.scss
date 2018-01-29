@@ -16,6 +16,19 @@ main {
 }
 
 
+/* MEDIA */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-container {
+  border: 1px solid $main-blue;
+  line-height: 0;
+}
+
+
 /* ALIGN */
 
 .text-align--left {

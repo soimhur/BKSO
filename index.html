@@ -52,6 +52,44 @@
       <div class="container text-align--center">
         gallery
       </div>
+      <!-- <div class="container">
+        <div id='slider' class='swipe'>
+          <div class='swipe-wrap'>
+            <div class="img-container">
+              <img src="src/img/sample.png" alt="">
+            </div>
+            <div class="img-container">
+              <img src="src/img/ed.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="container">
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="img-container">
+                <img src="src/img/ed.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-container">
+                <img src="src/img/sample.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-container">
+                <img src="src/img/sample.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+        </div>
+      </div>
     </section>
     <section class="section-g">
       <div class="container text-align--center">
@@ -60,6 +98,44 @@
     </section>
   </main>
   <script src="public/master.js"></script>
+  <!-- <script>
+    window.mySwipe = new Swipe(document.getElementById('slider'), {
+      startSlide: 1,
+      speed: 400,
+      auto: 2000,
+      continuous: true,
+      disableScroll: true,
+      stopPropagation: true,
+      callback: function(index, elem) {},
+    });
+
+    window.mySwipe = Swipe(document.getElementById('slider'));
+  </script> -->
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      speed: 400,
+      spaceBetween: 100,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    })
+
+    mySwiper.slideNext();
+  </script>
 </body>
 
-</html
+</html>

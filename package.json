@@ -26,6 +26,7 @@
     "gulp-watch": "^5.0.0",
     "jquery": "^3.2.1",
     "precss": "^3.0.0",
-    "swipe-js-iso": "^2.0.4"
+    "swipe-js-iso": "^2.0.4",
+    "swiper": "^4.1.0"
   }
 }
