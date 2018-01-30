@@ -5,8 +5,7 @@
  *    without disabling user zoom.
  */
 @import url("https://fonts.googleapis.com/css?family=Meddon");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900");
-@import url("https://fonts.googleapis.com/css?family=Meddon|Mrs+Saint+Delafield");
+@import url("https://fonts.googleapis.com/css?family=Vollkorn:400i,600");
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 html {
   font-family: sans-serif;
@@ -380,21 +379,22 @@ th {
 body {
   background-color: #FFFFFF;
   color: #0C1924;
-  background-color: whitesmoke;
-  overflow-x: hidden; }
+  background-color: #eaeaea; }
 
 main {
   width: 100%;
   max-width: 500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto; }
 
+/* PADDING */
 /* MEDIA */
 img {
   max-width: 100%;
   height: auto; }
 
 .img-container {
-  border: 1px solid #0C1924;
   line-height: 0; }
 
 /* ALIGN */
@@ -409,13 +409,16 @@ img {
 
 /* LAYOUT */
 .section-w {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  padding: 2em 0; }
 
 .section-g {
-  background-color: #EFEFEF; }
+  background-color: #EFEFEF;
+  padding: 2em 0; }
 
 .section-b {
-  background-color: #0C1924; }
+  background-color: #0C1924;
+  padding: 1.5em 0; }
 
 .container {
   max-width: 960px;
@@ -427,6 +430,30 @@ img {
 
 /* COLORS */
 /* COLORS */
+.diamond {
+  width: 5px;
+  height: 5px;
+  background-color: #0C1924;
+  text-align: center;
+  margin: 1em auto;
+  transform: rotate(-45deg); }
+
+.line {
+  display: block;
+  border-top: 0.5px solid #AEB3AB;
+  width: 30px;
+  margin: 1em auto;
+  text-align: center;
+  transform: rotate(-42deg); }
+
+.section-title {
+  padding: 1em 0; }
+
+.text-button {
+  border-bottom: 1px solid #0C1924;
+  padding-bottom: 0.2em;
+  font-weight: 600; }
+
 .text-box {
   max-width: 90%;
   margin: 5rem auto 0; }
@@ -434,17 +461,18 @@ img {
     margin-top: 2rem;
     padding-bottom: 4rem; }
 
-.text-box__greeting {
-  padding: 2em 0;
-  font-size: 1.1em; }
+.flower {
+  fill: #0C1924;
+  width: 25%; }
 
-.line {
-  display: block;
-  border-top: 0.5px solid #0C1924;
-  width: 30px;
-  margin: 1em auto;
-  text-align: center;
-  transform: rotate(-40deg); }
+.text-box__greeting {
+  padding: 1em 0;
+  font-size: 1.1em; }
+  .text-box__greeting:last-child {
+    font-weight: 500; }
+
+.swipe {
+  margin-bottom: 1em; }
 
 .swiper-container {
   width: 100%;
@@ -458,18 +486,36 @@ img {
   align-items: center;
   justify-content: center; }
 
-.swiper-pagination {
-  position: relative !important; }
+.swiper-pagination-bullet {
+  width: 6px !important;
+  height: 6px !important;
+  background: #FFFFFF !important;
+  opacity: 0.4 !important; }
+  .swiper-pagination-bullet-active {
+    opacity: 1 !important; }
+
+.location-info {
+  margin: 3em 0;
+  color: #3b3f39;
+  font-family: 'Noto Sans KR' !important; }
+
+.share-button {
+  margin: 2em 0;
+  padding: 1em 0;
+  text-align: center;
+  border-top: 1px solid #0C1924;
+  border-bottom: 1px solid #0C1924;
+  font-weight: bold; }
 
 /* COLORS */
 /* IMPORT FONTS */
 /* FONT SIZES */
 html {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.75; }
 
 body {
-  font-family: "Playfair Display", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  font-family: "Vollkorn", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
   word-break: keep-all;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
@@ -493,7 +539,8 @@ p {
 /* LINKS */
 a {
   color: inherit;
-  outline: none; }
+  outline: none;
+  text-decoration: none; }
 
 /* FONT COLOR */
 .text-w {
@@ -502,7 +549,7 @@ a {
 /* FONT STYLE */
 .text-writing {
   font-family: "Meddon", cursive;
-  font-size: 4.5rem;
+  font-size: 4rem;
   padding-top: 6rem;
   font-weight: normal; }
   .text-writing > div:first-child {
@@ -517,6 +564,10 @@ a {
 
 .bold {
   font-weight: 700; }
+
+.sub-title {
+  font-weight: 400;
+  color: #AEB3AB; }
 
 /**
  * Swiper 4.1.0

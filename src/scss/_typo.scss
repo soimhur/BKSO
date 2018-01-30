@@ -3,10 +3,9 @@
 /* IMPORT FONTS */
 
 @import url('https://fonts.googleapis.com/css?family=Meddon');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900');
-@import url('https://fonts.googleapis.com/css?family=Meddon|Mrs+Saint+Delafield');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400i,600');
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-$fonts: 'Playfair Display',
+$fonts: 'Vollkorn',
 'Noto Sans KR',
 'Apple SD Gothic Neo',
 sans-serif;
@@ -20,7 +19,7 @@ $font-size_2: 2rem;
 /* FONT SIZES */
 
 html {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.75;
 }
 
@@ -42,7 +41,6 @@ h6 {
   margin: 0;
   letter-spacing: 0.02em;
 }
-
 p {
   font-weight: normal;
   letter-spacing: -0.02em;
@@ -55,6 +53,7 @@ p {
 a {
   color: inherit;
   outline: none;
+  text-decoration: none;
 }
 
 
@@ -69,7 +68,7 @@ a {
 
 .text-writing {
   font-family: $handwriting-font;
-  font-size: 4.5rem;
+  font-size: 4rem;
   padding-top: 6rem;
   font-weight: normal;
   >div:first-child {
@@ -88,4 +87,9 @@ a {
 
 .bold {
   font-weight: 700;
+}
+
+.sub-title {
+  font-weight: 400;
+  color: $gray__medium;
 }

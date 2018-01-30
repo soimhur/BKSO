@@ -1,4 +1,38 @@
 @import 'color';
+/////////////////////////////
+////////  common  ///////////
+/////////////////////////////
+.diamond {
+  width: 5px;
+  height: 5px;
+  background-color: $main-blue;
+  text-align: center;
+  margin: 1em auto;
+  transform: rotate(-45deg);
+}
+
+.line {
+  display: block;
+  border-top: 0.5px solid $gray__medium;
+  width: 30px;
+  margin: 1em auto;
+  text-align: center;
+  transform: rotate(-42deg);
+}
+
+.section-title {
+  padding: 1em 0;
+}
+
+.text-button {
+  border-bottom: 1px solid $main-blue;
+  padding-bottom: 0.2em;
+  font-weight: 600;
+}
+
+/////////////////////////////
+//////// section-1///////////
+/////////////////////////////
 .text-box {
   max-width: 90%;
   margin: 5rem auto 0;
@@ -8,18 +42,20 @@
   }
 }
 
-.text-box__greeting {
-  padding: 2em 0;
-  font-size: 1.1em;
+/////////////////////////////
+//////// section-2///////////
+/////////////////////////////
+.flower {
+  fill: $main-blue;
+  width: 25%;
 }
 
-.line {
-  display: block;
-  border-top: 0.5px solid $main-blue;
-  width: 30px;
-  margin: 1em auto;
-  text-align: center;
-  transform: rotate(-40deg);
+.text-box__greeting {
+  padding: 1em 0;
+  font-size: 1.1em;
+  &:last-child {
+    font-weight: 500;
+  }
 }
 
 // .swipe {
@@ -35,6 +71,13 @@
 //   width: 100%;
 //   position: relative;
 // }
+/////////////////////////////
+//////// section-3///////////
+/////////////////////////////
+.swipe {
+  margin-bottom: 1em;
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -51,5 +94,30 @@
 }
 
 .swiper-pagination {
-  position: relative !important;
+  &-bullet {
+    width: 6px !important;
+    height: 6px !important;
+    background: $white !important;
+    opacity: 0.4 !important;
+    &-active {
+      opacity: 1 !important;
+    }
+  }
+}
+
+/////////////////////////////
+//////// section-4///////////
+/////////////////////////////
+.location-info {
+  margin: 3em 0;
+  color: $gray__dark;
+  font-family: 'Noto Sans KR' !important;
+}
+.share-button {
+  margin: 2em 0;
+  padding: 1em 0;
+  text-align: center;
+  border-top: 1px solid $main-blue;
+  border-bottom: 1px solid $main-blue;
+  font-weight: bold;
 }

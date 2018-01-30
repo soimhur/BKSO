@@ -34,7 +34,7 @@ gulp.task("build-js", function() {
   gulp.src(
       [
         config.vendor + "jquery/dist/jquery.js",
-        config.vendor + "swipe-js-iso/swipe.min.js",
+        // config.vendor + "swipe-js-iso/swipe.min.js",
         config.vendor + "swiper/dist/js/swiper.js",
         "src/custom.js",
       ]

@@ -5,16 +5,23 @@
 body {
   background-color: $white;
   color: $main-blue;
-  background-color: whitesmoke;
-  overflow-x: hidden;
+  background-color: #eaeaea;
 }
 
 main {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
+
+/* PADDING */
+
+$padding-vertical-1: 1.5em 0;
+$padding-vertical-2: 2em 0;
+$padding-vertical-3: 3em 0;
 
 /* MEDIA */
 
@@ -24,7 +31,6 @@ img {
 }
 
 .img-container {
-  border: 1px solid $main-blue;
   line-height: 0;
 }
 
@@ -48,14 +54,17 @@ img {
 
 .section-w {
   background-color: $white;
+  padding: $padding-vertical-2;
 }
 
 .section-g {
   background-color: $light-grey;
+  padding: $padding-vertical-2;
 }
 
 .section-b {
   background-color: $main-blue;
+  padding: $padding-vertical-1;
 }
 
 .container {
