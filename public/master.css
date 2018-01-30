@@ -8,7 +8,6 @@
 @import url("https://fonts.googleapis.com/css?family=Vollkorn:400i,600");
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 html {
-  font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -375,6 +374,69 @@ th {
   padding: 0; }
 
 /* COLORS */
+/* COLORS */
+/* IMPORT FONTS */
+/* FONT SIZES */
+html {
+  font-size: 14px;
+  line-height: 1.75; }
+
+body {
+  font-family: "Vollkorn", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  word-break: keep-all;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.02em; }
+
+p {
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  margin: 0.5em 0; }
+
+/* LINKS */
+a {
+  color: inherit;
+  outline: none;
+  text-decoration: none; }
+
+/* FONT COLOR */
+.text-w {
+  color: #FFFFFF; }
+
+/* FONT STYLE */
+.text-writing {
+  font-family: "Meddon", cursive;
+  font-size: 4rem;
+  padding-top: 6rem;
+  font-weight: normal; }
+  .text-writing > div:first-child {
+    text-align: left; }
+  .text-writing > div:last-child {
+    text-align: right;
+    padding-right: 0.2rem;
+    margin-top: -1.5rem; }
+    .text-writing > div:last-child > span:first-child {
+      font-size: 2.2rem;
+      padding: 0 .2rem; }
+
+.bold {
+  font-weight: 700; }
+
+.sub-title {
+  font-weight: 400;
+  color: #AEB3AB; }
+
+/* COLORS */
 /* GLOBAL SITE SETTINGS */
 body {
   background-color: #FFFFFF;
@@ -428,7 +490,6 @@ img {
 .full-height {
   height: 100vh; }
 
-/* COLORS */
 /* COLORS */
 .diamond {
   width: 5px;
@@ -506,68 +567,6 @@ img {
   border-top: 1px solid #0C1924;
   border-bottom: 1px solid #0C1924;
   font-weight: bold; }
-
-/* COLORS */
-/* IMPORT FONTS */
-/* FONT SIZES */
-html {
-  font-size: 14px;
-  line-height: 1.75; }
-
-body {
-  font-family: "Vollkorn", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
-  word-break: keep-all;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-  margin: 0;
-  letter-spacing: 0.02em; }
-
-p {
-  font-weight: normal;
-  letter-spacing: -0.02em;
-  margin: 0.5em 0; }
-
-/* LINKS */
-a {
-  color: inherit;
-  outline: none;
-  text-decoration: none; }
-
-/* FONT COLOR */
-.text-w {
-  color: #FFFFFF; }
-
-/* FONT STYLE */
-.text-writing {
-  font-family: "Meddon", cursive;
-  font-size: 4rem;
-  padding-top: 6rem;
-  font-weight: normal; }
-  .text-writing > div:first-child {
-    text-align: left; }
-  .text-writing > div:last-child {
-    text-align: right;
-    padding-right: 0.2rem;
-    margin-top: -1.5rem; }
-    .text-writing > div:last-child > span:first-child {
-      font-size: 2.2rem;
-      padding: 0 .2rem; }
-
-.bold {
-  font-weight: 700; }
-
-.sub-title {
-  font-weight: 400;
-  color: #AEB3AB; }
 
 /**
  * Swiper 4.1.0
