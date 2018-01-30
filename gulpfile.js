@@ -18,9 +18,9 @@ var config = {
 gulp.task("build-css", function() {
   gulp.src(
       [
-        config.vendor + "swipe-js-iso/style.css",
-        config.vendor + "swiper/dist/css/swiper.css",
         "src/scss/index.scss",
+        // config.vendor + "swipe-js-iso/style.css",
+        config.vendor + "swiper/dist/css/swiper.css",
       ]
     )
     .pipe(prefixer())
