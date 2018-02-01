@@ -619,8 +619,9 @@ img {
       font-size: 0.9em; }
 
 .pic {
-  padding: 1em 0 3em;
-  text-align: center; }
+  padding: 1em 0 4em;
+  text-align: center;
+  line-height: 0; }
   .pic-100 {
     width: 100%; }
   .pic-80 {
