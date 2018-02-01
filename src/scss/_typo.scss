@@ -41,6 +41,7 @@ h6 {
   margin: 0;
   letter-spacing: 0.02em;
 }
+
 p {
   font-weight: normal;
   letter-spacing: -0.02em;
@@ -54,6 +55,10 @@ a {
   color: inherit;
   outline: none;
   text-decoration: none;
+}
+
+.linktext {
+  border-bottom: 1px solid $main-blue;
 }
 
 
