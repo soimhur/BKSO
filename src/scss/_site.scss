@@ -2,9 +2,43 @@
 
 /* GLOBAL SITE SETTINGS */
 
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100vw;
+  height: 100%;
+}
+
 body {
   background-color: $white;
   color: $main-blue;
+  background-color: #eaeaea;
+  -webkit-overflow-scrolling: touch;
+}
+
+main {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+/* PADDING */
+
+$padding-vertical-1: 1.5em 0;
+$padding-vertical-2: 2em 0;
+$padding-vertical-3: 3em 0;
+
+/* MEDIA */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-container {
+  line-height: 0;
 }
 
 
@@ -25,16 +59,19 @@ body {
 
 /* LAYOUT */
 
-.section-w {
-  background-color: $white;
+.section-m {
+  background-color: $grey;
+  padding: $padding-vertical-2;
 }
 
 .section-g {
   background-color: $light-grey;
+  padding: $padding-vertical-2;
 }
 
 .section-b {
   background-color: $main-blue;
+  padding: $padding-vertical-1;
 }
 
 .container {
