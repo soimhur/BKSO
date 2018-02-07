@@ -1,3 +1,4 @@
+//shapeoverlay js code
 class ShapeOverlays {
   constructor(elm) {
     this.elm = elm;
@@ -37,9 +38,9 @@ class ShapeOverlays {
   updatePath(time) {
     const points = [];
     for (var i = 0; i < this.numPoints; i++) {
-      const thisEase = this.isOpened ? 
-                        (i == 1) ? ease.cubicOut : ease.cubicInOut:
-                        (i == 1) ? ease.cubicInOut : ease.cubicOut;
+      const thisEase = this.isOpened ?
+        (i == 1) ? ease.cubicOut : ease.cubicInOut :
+        (i == 1) ? ease.cubicInOut : ease.cubicOut;
       points[i] = thisEase(Math.min(Math.max(time - this.delayPointsArray[i], 0) / this.duration, 1)) * 100
     }
 
@@ -70,8 +71,7 @@ class ShapeOverlays {
       requestAnimationFrame(() => {
         this.renderLoop();
       });
-    }
-    else {
+    } else {
       this.isAnimating = false;
     }
   }

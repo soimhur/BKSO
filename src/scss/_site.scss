@@ -2,6 +2,14 @@
 
 /* GLOBAL SITE SETTINGS */
 
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100vw;
+  height: 100%;
+}
+
 body {
   background-color: $white;
   color: $main-blue;
@@ -13,8 +21,6 @@ main {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 
