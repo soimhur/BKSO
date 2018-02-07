@@ -7,21 +7,33 @@
   height: 5px;
   background-color: $main-blue;
   text-align: center;
-  margin: 1em auto;
+  margin: 1.5em auto;
   transform: rotate(-45deg);
+  &-w {
+    background-color: $grey;
+  }
 }
 
 .line {
   display: block;
-  border-top: 0.5px solid $gray__medium;
-  width: 30px;
-  margin: 1em auto;
+  border: 0.5px solid $medium-grey;
+  width: 100%;
+  margin: 1em auto 0;
   text-align: center;
-  transform: rotate(-42deg);
 }
 
 .section-title {
   padding: 1em 0;
+}
+
+.sub-title {
+  font-weight: 400;
+  color: $medium-grey;
+  max-width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -0.9em;
+  background: $light-grey;
 }
 
 .text-button {
@@ -33,9 +45,27 @@
 /////////////////////////////
 //////// section-1///////////
 /////////////////////////////
+.main-type {
+  position: relative;
+  width: 100%;
+  margin: 20% 0 0 0;
+  svg {
+    fill: $white;
+    &:nth-child(1) {
+      margin-left: -0.5em;
+    }
+    &:nth-child(2) {
+      margin-top: -1.5em;
+      margin-right: -0.5em;
+    }
+  }
+}
+
 .text-box {
   max-width: 90%;
   margin: 5rem auto 0;
+  color: $grey;
+  font-weight: 400;
   &:last-child {
     margin-top: 2rem;
     padding-bottom: 4rem;
@@ -46,31 +76,17 @@
 //////// section-2///////////
 /////////////////////////////
 .flower {
-  fill: $main-blue;
+  fill: $gold;
   width: 25%;
 }
 
 .text-box__greeting {
   padding: 1em 0;
-  font-size: 1.1em;
   &:last-child {
     font-weight: 500;
   }
 }
 
-// .swipe {
-//   overflow: hidden;
-//   position: relative;
-// }
-// .swipe-wrap {
-//   overflow: hidden;
-//   position: relative;
-// }
-// .swipe-wrap>div {
-//   float: left;
-//   width: 100%;
-//   position: relative;
-// }
 /////////////////////////////
 //////// section-3///////////
 /////////////////////////////
@@ -110,7 +126,7 @@
 /////////////////////////////
 .location-info {
   margin: 3em 0;
-  color: $gray__dark;
+  color: $dark-grey;
   font-family: 'Noto Sans KR' !important;
 }
 
