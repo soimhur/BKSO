@@ -507,8 +507,8 @@ img {
   --path-fill-1: #FAFAFA;
   --path-fill-2: #FFFFFF;
   --path-fill-3: #0C1924;
-  --color-menu: #FAFAFA;
-  --font-size-menu: 3vmax;
+  --color-menu: #F4F4F4;
+  --font-size-menu: 4vmax;
   --font-weight-menu: 400;
   --button-line: #0C1924;
   --button-line-click: #FAFAFA; }
@@ -527,11 +527,19 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   position: absolute;
   top: 0;
   left: 0;
   pointer-events: none;
   z-index: 100; }
+  .global-menu-inner {
+    position: relative; }
+
+.menu-writing {
+  fill: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  margin-top: -5em; }
 
 .global-menu__item {
   color: var(--color-menu);
@@ -540,9 +548,11 @@ img {
   transform: translateY(-100%);
   pointer-events: none;
   display: block;
-  margin: 0.25em 0;
+  margin: 0.5em 0;
   transition: transform 0.3s, opacity 0.3s;
   transition-timing-function: ease-in; }
+  .global-menu__item:hover, .global-menu__item:active, .global-menu__item:focus {
+    text-decoration: line-through; }
   .global-menu__item--ex {
     transition: transform 0.1s, opacity 0.1s;
     transform: translateY(100%);
@@ -973,6 +983,9 @@ img {
   font-size: 0.8em;
   color: #a8a8a8;
   padding-top: 3em; }
+
+.paragraph-box {
+  padding: 1em 0; }
 
 /**
  * Swiper 4.1.0

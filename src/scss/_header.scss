@@ -6,8 +6,8 @@
   --path-fill-1: $light-grey;
   --path-fill-2: $white;
   --path-fill-3: $main-blue;
-  --color-menu: $light-grey;
-  --font-size-menu: 3vmax;
+  --color-menu: $grey;
+  --font-size-menu: 4vmax;
   --font-weight-menu: 400;
   --button-line: $main-blue;
   --button-line-click: $light-grey;
@@ -30,11 +30,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   position: absolute;
   top: 0;
   left: 0;
   pointer-events: none;
   z-index: 100;
+  &-inner {
+    position: relative;
+  }
+}
+
+.menu-writing {
+  fill: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  margin-top: -5em;
 }
 
 .global-menu__item {
@@ -44,9 +54,14 @@
   transform: translateY(-100%);
   pointer-events: none;
   display: block;
-  margin: 0.25em 0;
+  margin: 0.5em 0;
   transition: transform 0.3s, opacity 0.3s;
   transition-timing-function: ease-in;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: line-through;
+  }
   &--ex {
     transition: transform 0.1s, opacity 0.1s;
     transform: translateY(100%);
