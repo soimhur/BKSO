@@ -28,8 +28,9 @@
 
 .sub-title {
   font-weight: 400;
+  font-size: 1.8em;
   color: $medium-grey;
-  max-width: 100px;
+  max-width: 120px;
   text-align: center;
   margin: 0 auto;
   margin-top: -0.9em;
@@ -37,7 +38,7 @@
 }
 
 .text-button {
-  border-bottom: 1px solid $main-blue;
+  border-bottom: 2px solid $main-blue;
   padding-bottom: 0.2em;
   font-weight: 600;
 }
@@ -46,29 +47,39 @@
 //////// section-1///////////
 /////////////////////////////
 .main-type {
-  position: relative;
+  position: absolute;
   width: 100%;
-  margin: 20% 0 0 0;
+  top: 20%;
   svg {
     fill: $white;
     &:nth-child(1) {
       margin-left: -0.5em;
     }
     &:nth-child(2) {
-      margin-top: -1.5em;
+      margin-top: -2.5em;
       margin-right: -0.5em;
     }
   }
 }
 
+.position-parent {
+  position: relative;
+  .position-child {
+    position: absolute;
+    bottom: 2.5em;
+    left: 0;
+    right: 0;
+  }
+}
+
 .text-box {
   max-width: 90%;
-  margin: 5rem auto 0;
+  margin: 0 auto;
   color: $grey;
   font-weight: 400;
   &:last-child {
     margin-top: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -124,6 +135,22 @@
 /////////////////////////////
 //////// section-4///////////
 /////////////////////////////
+.map {
+  padding-bottom: 2em;
+  .map-round {
+    border: 1.5px solid #eaeaea;
+  }
+  &-button {
+    font-weight: bold;
+  }
+}
+
+.button-flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .location-info {
   margin: 3em 0;
   color: $dark-grey;
@@ -225,4 +252,13 @@
       }
     }
   }
+}
+
+/////////////////////////////
+//////// footer  ///////////
+/////////////////////////////
+.footer {
+  font-size: 0.8em;
+  color: $medium-grey;
+  padding-top: 3em;
 }

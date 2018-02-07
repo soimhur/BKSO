@@ -2,10 +2,19 @@
 
 /* IMPORT FONTS */
 
+@font-face {
+  font-family: 'open-arrow';
+  src: url('src/font/OpenArrow-Regular.eot') format('embedded-opentype'), url('src/font/OpenArrow-Regular.woff2') format('woff2'), url('src/font/OpenArrow-Regular.woff') format('woff'), url('src/font/OpenArrow-Regular.otf') format('opentype'), url('src/font/OpenArrow-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+2190-21ff;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Meddon');
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:400i,600');
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-$fonts: 'Vollkorn',
+$fonts: 'open-arrow',
+'Vollkorn',
 'Noto Sans KR',
 'Apple SD Gothic Neo',
 sans-serif;

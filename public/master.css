@@ -376,13 +376,20 @@ th {
 /* COLORS */
 /* COLORS */
 /* IMPORT FONTS */
+@font-face {
+  font-family: 'open-arrow';
+  src: url("src/font/OpenArrow-Regular.eot") format("embedded-opentype"), url("src/font/OpenArrow-Regular.woff2") format("woff2"), url("src/font/OpenArrow-Regular.woff") format("woff"), url("src/font/OpenArrow-Regular.otf") format("opentype"), url("src/font/OpenArrow-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+2190-21ff; }
+
 /* FONT SIZES */
 html {
   font-size: 14px;
   line-height: 1.75; }
 
 body {
-  font-family: "Vollkorn", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  font-family: "open-arrow", "Vollkorn", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
   word-break: keep-all;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
@@ -795,38 +802,47 @@ img {
 
 .sub-title {
   font-weight: 400;
+  font-size: 1.8em;
   color: #a8a8a8;
-  max-width: 100px;
+  max-width: 120px;
   text-align: center;
   margin: 0 auto;
   margin-top: -0.9em;
   background: #FAFAFA; }
 
 .text-button {
-  border-bottom: 1px solid #0C1924;
+  border-bottom: 2px solid #0C1924;
   padding-bottom: 0.2em;
   font-weight: 600; }
 
 .main-type {
-  position: relative;
+  position: absolute;
   width: 100%;
-  margin: 20% 0 0 0; }
+  top: 20%; }
   .main-type svg {
     fill: #FFFFFF; }
     .main-type svg:nth-child(1) {
       margin-left: -0.5em; }
     .main-type svg:nth-child(2) {
-      margin-top: -1.5em;
+      margin-top: -2.5em;
       margin-right: -0.5em; }
+
+.position-parent {
+  position: relative; }
+  .position-parent .position-child {
+    position: absolute;
+    bottom: 2.5em;
+    left: 0;
+    right: 0; }
 
 .text-box {
   max-width: 90%;
-  margin: 5rem auto 0;
+  margin: 0 auto;
   color: #F4F4F4;
   font-weight: 400; }
   .text-box:last-child {
     margin-top: 2rem;
-    padding-bottom: 4rem; }
+    padding-bottom: 2rem; }
 
 .flower {
   fill: #E4A77B;
@@ -859,6 +875,18 @@ img {
   opacity: 0.4 !important; }
   .swiper-pagination-bullet-active {
     opacity: 1 !important; }
+
+.map {
+  padding-bottom: 2em; }
+  .map .map-round {
+    border: 1.5px solid #eaeaea; }
+  .map-button {
+    font-weight: bold; }
+
+.button-flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
 
 .location-info {
   margin: 3em 0;
@@ -940,6 +968,11 @@ img {
         margin-right: 0.2em; }
       .pic-50 > div:last-child {
         margin-left: 0.2em; }
+
+.footer {
+  font-size: 0.8em;
+  color: #a8a8a8;
+  padding-top: 3em; }
 
 /**
  * Swiper 4.1.0
