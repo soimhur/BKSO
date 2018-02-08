@@ -978,6 +978,12 @@ img {
         margin-right: 0.2em; }
       .pic-50 > div:last-child {
         margin-left: 0.2em; }
+  .pic-60-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
+    .pic-60-right > div:last-child {
+      width: 70%; }
 
 .footer {
   font-size: 0.8em;
