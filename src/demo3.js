@@ -93,11 +93,13 @@ class ShapeOverlays {
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.add('is-opened');
       }
+      document.body.style.overflow = 'hidden'
     } else {
       elmHamburger.classList.remove('is-opened-navi');
       for (var i = 0; i < gNavItems.length; i++) {
         gNavItems[i].classList.remove('is-opened');
       }
+      document.body.style.overflow = 'auto'
     }
   });
 }());
