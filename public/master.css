@@ -876,7 +876,9 @@ img {
 .swiper-slide {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  width: 472px;
+  height: 700px; }
 
 .swiper-pagination-bullet {
   width: 6px !important;
