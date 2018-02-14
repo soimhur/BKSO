@@ -876,7 +876,9 @@ img {
 .swiper-slide {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  width: 472px;
+  height: 700px; }
 
 .swiper-pagination-bullet {
   width: 6px !important;
@@ -904,7 +906,7 @@ img {
   font-family: 'Noto Sans KR' !important; }
 
 .share-button {
-  margin: 2em 0;
+  margin: 2em 0 0;
   padding: 1em 0;
   text-align: center;
   border-top: 1px solid #0C1924;
@@ -926,7 +928,7 @@ img {
     line-height: 1;
     left: 0;
     right: 0;
-    top: 115px;
+    top: 78px;
     text-align: center;
     position: absolute;
     font-size: 35px; }
@@ -978,6 +980,26 @@ img {
         margin-right: 0.2em; }
       .pic-50 > div:last-child {
         margin-left: 0.2em; }
+  .pic-60-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
+    .pic-60-right > div:last-child {
+      width: 70%; }
+  .pic-60-left {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; }
+    .pic-60-left > div:first-child {
+      width: 70%; }
+
+.illust {
+  width: 70%;
+  margin: 2em auto 1em; }
+
+.local-header {
+  position: fixed;
+  padding: 1em 1.5em; }
 
 .footer {
   font-size: 0.8em;
