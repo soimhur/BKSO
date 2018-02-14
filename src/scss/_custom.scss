@@ -1,0 +1,299 @@
+@import 'color';
+/////////////////////////////
+////////  common  ///////////
+/////////////////////////////
+.diamond {
+  width: 5px;
+  height: 5px;
+  background-color: $main-blue;
+  text-align: center;
+  margin: 1.5em auto;
+  transform: rotate(-45deg);
+  &-w {
+    background-color: $grey;
+  }
+}
+
+.line {
+  display: block;
+  border: 0.5px solid $medium-grey;
+  width: 100%;
+  margin: 1em auto 0;
+  text-align: center;
+}
+
+.section-title {
+  padding: 1em 0;
+}
+
+.sub-title {
+  font-weight: 400;
+  font-size: 1.8em;
+  color: $medium-grey;
+  max-width: 120px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -0.9em;
+  background: $light-grey;
+}
+
+.text-button {
+  border-bottom: 2px solid $main-blue;
+  padding-bottom: 0.2em;
+  font-weight: 600;
+}
+
+/////////////////////////////
+//////// section-1///////////
+/////////////////////////////
+.main-type {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  svg {
+    fill: $white;
+    &:nth-child(1) {
+      margin-left: -0.5em;
+    }
+    &:nth-child(2) {
+      margin-top: -2.5em;
+      margin-right: -0.5em;
+    }
+  }
+}
+
+.position-parent {
+  position: relative;
+  .position-child {
+    position: absolute;
+    bottom: 2.5em;
+    left: 0;
+    right: 0;
+  }
+}
+
+.text-box {
+  max-width: 90%;
+  margin: 0 auto;
+  color: $grey;
+  font-weight: 400;
+  &:last-child {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/////////////////////////////
+//////// section-2///////////
+/////////////////////////////
+.flower {
+  fill: $gold;
+  width: 25%;
+}
+
+.text-box__greeting {
+  padding: 1em 0;
+  &:last-child {
+    font-weight: 500;
+  }
+}
+
+/////////////////////////////
+//////// section-3///////////
+/////////////////////////////
+.swipe {
+  margin-bottom: 1em;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  height: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 472px;
+  height: 700px;
+}
+
+.swiper-pagination {
+  &-bullet {
+    width: 6px !important;
+    height: 6px !important;
+    background: $white !important;
+    opacity: 0.4 !important;
+    &-active {
+      opacity: 1 !important;
+    }
+  }
+}
+
+/////////////////////////////
+//////// section-4///////////
+/////////////////////////////
+.map {
+  padding-bottom: 2em;
+  .map-round {
+    border: 1.5px solid #eaeaea;
+  }
+  &-button {
+    font-weight: bold;
+  }
+}
+
+.button-flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.location-info {
+  margin: 3em 0;
+  color: $dark-grey;
+  font-family: 'Noto Sans KR' !important;
+}
+
+.share-button {
+  margin: 2em 0 0;
+  padding: 1em 0;
+  text-align: center;
+  border-top: 1px solid $main-blue;
+  border-bottom: 1px solid $main-blue;
+  font-weight: bold;
+}
+
+/////////////////////////////
+////////  gallery ///////////
+/////////////////////////////
+.gallery-header {
+  width: 100%;
+  height: 520px;
+  display: table;
+  &-container {
+    width: 100%;
+    height: 90%;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+  }
+  &-title {
+    margin: 0;
+    line-height: 1;
+    left: 0;
+    right: 0;
+    top: 78px;
+    text-align: center;
+    position: absolute;
+    font-size: 35px;
+  }
+  &-subtitle {
+    font-size: 8px;
+    color: #777;
+    letter-spacing: 2.5px;
+    font-weight: normal;
+    margin-top: 5px;
+  }
+  .title-pic {
+    width: 250px;
+    height: 280px;
+  }
+}
+
+.area-header {
+  padding: 2em 0;
+  &-title {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  &-line {
+    display: block;
+    margin: 2em auto;
+    height: 50px;
+    border-left: 1px solid #111;
+    width: 0%;
+  }
+  &-description {
+    padding: 1em 0;
+    width: 70%;
+    margin: 0 auto;
+    .caption {
+      opacity: 0.5;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.pic {
+  padding: 1em 0 4em;
+  text-align: center;
+  line-height: 0;
+  &-100 {
+    width: 100%;
+  }
+  &-80 {
+    width: 85%;
+    margin: 0 auto;
+  }
+  &-50 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    >div {
+      width: 50%;
+      &:first-child {
+        margin-right: 0.2em;
+      }
+      &:last-child {
+        margin-left: 0.2em;
+      }
+    }
+  }
+  &-60-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    >div:last-child {
+      width: 70%;
+    }
+  }
+  &-60-left {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    >div:first-child {
+      width: 70%;
+    }
+  }
+}
+
+.illust {
+  width: 70%;
+  margin: 2em auto 1em;
+}
+
+.local-header {
+  position: fixed;
+  padding: 1em 1.5em;
+}
+
+/////////////////////////////
+//////// footer  ///////////
+/////////////////////////////
+.footer {
+  font-size: 0.8em;
+  color: $medium-grey;
+  padding-top: 3em;
+}
+
+/////////////////////////////
+////////   about ///////////
+/////////////////////////////
+.paragraph-box {
+  padding: 1em 0;
+}

@@ -18,7 +18,8 @@ var config = {
 gulp.task("build-css", function() {
   gulp.src(
       [
-        "src/custom.css"
+        "src/scss/index.scss",
+        config.vendor + "swiper/dist/css/swiper.css",
       ]
     )
     .pipe(prefixer())
@@ -32,7 +33,8 @@ gulp.task("build-js", function() {
   gulp.src(
       [
         config.vendor + "jquery/dist/jquery.js",
-        "src/custom.js"
+        config.vendor + "swiper/dist/js/swiper.js",
+        "src/custom.js",
       ]
     )
     .pipe(concat("master.js"))
