@@ -256,7 +256,15 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    > div:last-child {
+    >div:last-child {
+      width: 70%;
+    }
+  }
+  &-60-left {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    >div:first-child {
       width: 70%;
     }
   }

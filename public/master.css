@@ -984,6 +984,12 @@ img {
     justify-content: flex-end; }
     .pic-60-right > div:last-child {
       width: 70%; }
+  .pic-60-left {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; }
+    .pic-60-left > div:first-child {
+      width: 70%; }
 
 .footer {
   font-size: 0.8em;
