@@ -16,7 +16,7 @@
 
 .line {
   display: block;
-  border: 0.5px solid $medium-grey;
+  border: 0.5px solid $gold;
   width: 100%;
   margin: 1em auto 0;
   text-align: center;
@@ -27,14 +27,16 @@
 }
 
 .sub-title {
-  font-weight: 400;
-  font-size: 1.8em;
-  color: $medium-grey;
-  max-width: 120px;
+  font-weight: 500;
+  font-size: 1.1em;
+  color: $gold;
   text-align: center;
   margin: 0 auto;
-  margin-top: -0.9em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
   background: $light-grey;
+  margin-top: -1em;
+  max-width: 130px;
 }
 
 .text-button {

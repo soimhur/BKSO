@@ -515,7 +515,7 @@ img {
 
 .line {
   display: block;
-  border: 0.5px solid #a8a8a8;
+  border: 0.5px solid #e5b593;
   width: 100%;
   margin: 1em auto 0;
   text-align: center; }
@@ -524,14 +524,16 @@ img {
   padding: 1em 0; }
 
 .sub-title {
-  font-weight: 400;
-  font-size: 1.8em;
-  color: #a8a8a8;
-  max-width: 120px;
+  font-weight: 500;
+  font-size: 1.1em;
+  color: #e5b593;
   text-align: center;
   margin: 0 auto;
-  margin-top: -0.9em;
-  background: #FAFAFA; }
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background: #FAFAFA;
+  margin-top: -1em;
+  max-width: 130px; }
 
 .text-button {
   border-bottom: 2px solid #0C1924;
