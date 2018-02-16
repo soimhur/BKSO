@@ -199,9 +199,11 @@
         </div>
       </div>
       <div class="container">
-        <div class="share-button">
-          <i class="fas fa-comment"></i>&ensp;카카오톡으로 공유하기
-        </div >
+        <a id="kakao-link-btn" href="javascript:sendLink()">
+          <div class="share-button">
+            <i class="fas fa-comment"></i>&ensp;카카오톡으로 공유하기
+          </div>
+        </a>
       </div>
     </section>
     <section class="section-b footer">
@@ -213,6 +215,25 @@
   <script src="public/master.js"></script>
   <script src="src/demo3.js"></script>
   <script src="src/easings.js"></script>
+  <!-- kakaotalk share -->
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+  <script type='text/javascript'>
+    Kakao.init('f68c7257b1811b7317dc3dd5b66bc918');
+    Kakao.Link.createTalkLinkButton({
+      container: '#kakao-link-btn',
+      label: '조법근 & 허소임 결혼합니다.\n 2018년 3월 17일 6시 @노블발렌티',
+      image: {
+        src: 'http://www.openingour.com/web/upload/mcard/momentr/kakao.png',
+        width: '640',
+        height: '1020'
+      },
+      webButton: {
+        text: '청첩장 보러가기',
+        url: 'https://sokeun.co/'
+      }
+  });
+  </script>
+
 </body>
 
 </html>
