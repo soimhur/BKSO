@@ -530,10 +530,10 @@ img {
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   background: #FAFAFA;
-  margin-top: -1em;
-  max-width: 130px; }
+  margin-top: -0.8em;
+  max-width: 150px; }
 
 .text-button {
   border-bottom: 2px solid #0C1924;
