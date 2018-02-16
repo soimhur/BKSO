@@ -43,15 +43,73 @@
   font-weight: 600;
 }
 
+.small-caption {
+  opacity: 0.8;
+  font-size: 0.8em;
+}
+
+
+/* scroll-right-button-motion */
+
+@keyframes to-right {
+  0% {
+    margin-left: -2px;
+  }
+  30% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -2px;
+  }
+}
+
+.scroll-right {
+  animation: to-right 0.8s ease-in-out infinite running;
+}
+
+.scroll-left {
+  animation: to-left 0.8s ease-in-out infinite running;
+}
+
+@keyframes to-left {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -4px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes to-right {
+  0% {
+    margin-right: 0;
+  }
+  50% {
+    margin-right: 4px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
+
 /////////////////////////////
 //////// section-1///////////
 /////////////////////////////
+#section-1 {
+  .diamond {
+    background: $gold;
+  }
+}
+
 .main-type {
   position: absolute;
   width: 100%;
   top: 20%;
   svg {
-    fill: $white;
+    fill: $gold;
     &:nth-child(1) {
       margin-left: -0.5em;
     }
@@ -75,7 +133,7 @@
 .text-box {
   max-width: 90%;
   margin: 0 auto;
-  color: $grey;
+  color: $gold;
   font-weight: 400;
   &:last-child {
     margin-top: 2rem;
@@ -95,6 +153,7 @@
   padding: 1em 0;
   &:last-child {
     font-weight: 500;
+    font-size: 1.1em;
   }
 }
 
@@ -141,6 +200,7 @@
   padding-bottom: 2em;
   .map-round {
     border: 1.5px solid #eaeaea;
+    width: 100%;
   }
   &-button {
     font-weight: bold;
@@ -155,12 +215,15 @@
 
 .location-info {
   margin: 3em 0;
+  padding: 1.2em;
   color: $dark-grey;
   font-family: 'Noto Sans KR' !important;
+  background: rgba(242, 242, 242, 0.8);
+  border-radius: 0.2em;
 }
 
 .share-button {
-  margin: 2em 0 0;
+  margin: 1.5em 0 0;
   padding: 1em 0;
   text-align: center;
   border-top: 1px solid $main-blue;
@@ -280,6 +343,10 @@
 .local-header {
   position: fixed;
   padding: 1em 1.5em;
+  >a {
+    width: 2em;
+    font-size: 1.25em;
+  }
 }
 
 /////////////////////////////
