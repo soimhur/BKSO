@@ -159,7 +159,7 @@
       </div>
       <div class="container text-align--center">
         <small class="small-caption">사진 혹은 밑의 버튼을 클릭하면 더 많은 사진을 보실 수 있습니다.</small>
-        <a href="/gallery" onclick="ga('send','event','kakaoshare', 'click', 'kakaoshare', '1')">
+        <a href="/gallery" onclick="ga('send','event','button', 'click', 'toGallery', '1')">
           <div class="share-button">
             사진 더 보기&ensp;<span class="scroll-right">&#x2192</span>
           </div>
@@ -179,16 +179,16 @@
             <tr>
               <td class="map-round">
                 <a href="https://map.naver.com/?searchCoord=b09ed13c177e41d169de29a1e1af083a99596ccdca52f21e2bd22fc063fbe63e&query=64W467iU67Cc66CM7Yuw7ZWY7Jqw7Iqk7Juo65Sp7ZmA&tab=1&lng=3e27478dcc752c470656df7d78419f67&mapMode=0&mpx=37.5140267%2C127.0634224%3AZ11%3A0.0198318%2C0.0089763&lat=eb253992a3a3d94393e85b1e246cfbd5&dlevel=11&enc=b64&menu=location&__fromRestorer=true"
-                  target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1518058242344_-2090898969" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top; width:100%;" /></a>
+                  target="_blank" onclick="ga('send','event','mainmap', 'click', 'mainmap', '5');"><img src="http://prt.map.naver.com/mashupmap/print?key=p1518058242344_-2090898969" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top; width:100%;" /></a>
               </td>
             </tr>
           </table>
         </div>
         <div class="button-flexbox">
-          <a href="https://m.map.naver.com/search2/search.nhn?query=%EB%85%B8%EB%B8%94%EB%B0%9C%EB%A0%8C%ED%8B%B0%ED%95%98%EC%9A%B0%EC%8A%A4%EC%9B%A8%EB%94%A9%ED%99%80&siteLocation=&queryRank=&type=#/map/1" class="text-button">
+          <a href="https://m.map.naver.com/search2/search.nhn?query=%EB%85%B8%EB%B8%94%EB%B0%9C%EB%A0%8C%ED%8B%B0%ED%95%98%EC%9A%B0%EC%8A%A4%EC%9B%A8%EB%94%A9%ED%99%80&siteLocation=&queryRank=&type=#/map/1" class="text-button" onclick="ga('send','event','naver', 'click', 'navermap', '2');" target="_blank">
             <i class="fas fa-map-marker-alt"></i>&ensp;네이버 지도로 보기
           </a>
-          <a href="https://m.map.daum.net/actions/detailMapView?id=17157328" class="text-button">
+          <a href="https://m.map.daum.net/actions/detailMapView?id=17157328" class="text-button" onclick="ga('send','event','daum', 'click', 'daummap', '3');" target="_blank">
             <i class="fas fa-map-marker-alt"></i>&ensp; 카카오 지도로 보기
           </a>
         </div>
@@ -216,7 +216,7 @@
         </div>
       </div>
       <div class="container">
-        <a id="kakao-link-btn" href="javascript:sendLink()">
+        <a id="kakao-link-btn" href="javascript:sendLink()" onclick="ga('send','event','kakaoshare', 'click', 'kakaoshare', '4');">
           <div class="share-button">
             <i class="fas fa-comment"></i>&ensp;카카오톡으로 공유하기
           </div>
