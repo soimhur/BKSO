@@ -5,7 +5,7 @@ $(function() {
     speed: 900,
     spaceBetween: 100,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
     },
 
     // If we need pagination
