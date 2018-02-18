@@ -2,8 +2,11 @@ $(function() {
   //initialize swiper when document ready
   mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
-    speed: 900,
-    spaceBetween: 100,
+    fadeEffect: {
+      crossFade: true
+    },
+    speed: 1000,
+    spaceBetween: 10,
     autoplay: {
       delay: 3000,
     },
