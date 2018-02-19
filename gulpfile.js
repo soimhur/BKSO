@@ -34,6 +34,7 @@ gulp.task("build-js", function() {
       [
         config.vendor + "jquery/dist/jquery.js",
         config.vendor + "swiper/dist/js/swiper.js",
+        "src/scrollReveal.min.js",
         "src/custom.js",
       ]
     )
