@@ -18,6 +18,15 @@ $(function() {
   });
   mySwiper.init();
 
+  var config = {
+    easing: 'hustle',
+    reset: true,
+    delay: 'onload',
+    vFactor: 0.90,
+    mobile: true,
+  }
+  window.sr = new scrollReveal(config);
+
   //set wow animation
   wow = new WOW({
     boxClass: 'wow', // default
