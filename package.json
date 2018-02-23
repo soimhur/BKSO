@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/soimhur/sokeun-blog#readme",
   "devDependencies": {
+    "aos": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-batch": "^1.0.5",
