@@ -78,11 +78,11 @@
 }
 
 .scroll-right {
-  animation: to-right 0.5s ease-in-out infinite running;
+  animation: to-right 0.6s ease-in-out infinite running;
 }
 
 .scroll-left {
-  animation: to-left 0.5s ease-in-out infinite running;
+  animation: to-left 0.6s ease-in-out infinite running;
 }
 
 /////////////////////////////
@@ -333,6 +333,7 @@
 .local-header {
   position: fixed;
   padding: 1em 1.5em;
+  z-index: 999;
   >a {
     width: 2em;
     font-size: 1.25em;
@@ -353,4 +354,42 @@
 /////////////////////////////
 .paragraph-box {
   padding: 1em 0;
+}
+
+/////////////////////////////
+////////pre loader///////////
+/////////////////////////////
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $main-blue;
+  z-index: 999;
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.6);
+  animation: flip 1s infinite;
+  perspective: 100px;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(180deg) rotateX(180deg);
+  }
 }

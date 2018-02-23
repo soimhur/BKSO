@@ -20,6 +20,7 @@ gulp.task("build-css", function() {
       [
         "src/scss/index.scss",
         config.vendor + "swiper/dist/css/swiper.css",
+        config.vendor + "aos/dist/aos.css",
       ]
     )
     .pipe(prefixer())
@@ -34,7 +35,9 @@ gulp.task("build-js", function() {
       [
         config.vendor + "jquery/dist/jquery.js",
         config.vendor + "swiper/dist/js/swiper.js",
+        config.vendor + "aos/dist/aos.js",
         "src/custom.js",
+        "src/custom-aos.js",
       ]
     )
     .pipe(concat("master.js"))

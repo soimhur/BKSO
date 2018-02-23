@@ -48,11 +48,11 @@
   <link rel="stylesheet" href="public/master.css">
   <!--font-awesome-->
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <!--animation-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 </head>
 
 <body class="background-color-set">
+
+
   <!-- <div class="header">
     <div class="hamburger hamburger--demo-3">
       <div class="hamburger__line hamburger__line--01">
@@ -83,11 +83,11 @@
   </div> -->
   <main class="main">
     <div class="local-header">
-      <a href="/index" class="text-button">←
+      <a href="/index" class="text-button" onclick="ga('send','event','back', 'click', 'back');">←
       </a>
     </div>
     <section class="section-g">
-      <div class="gallery-header">
+      <div class="gallery-header" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
         <div class="gallery-header-container text-align--center">
           <div class="gallery-header-title">
             Sokeun Photo
@@ -98,7 +98,7 @@
       </div>
     </section>
     <section class="section-g">
-      <div class="container text-align--center">
+      <div class="container text-align--center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
         <div class="area-header">
           <div class="area-header-title"><i>in haneul park</i></div>
           <div class="area-header-line text-align--center"></div>
@@ -111,7 +111,7 @@
         </div>
       </div>
     </section>
-    <section class="section-g">
+    <section class="section-g" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
       <div class="pic pic-80">
         <img src="src/img/wsnap/9.jpg" alt="하늘공원 스냅">
       </div>
@@ -154,7 +154,7 @@
       </div>
     </section>
     <section class="section-g">
-      <div class="container text-align--center">
+      <div class="container text-align--center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
         <div class="area-header">
           <div class="area-header-title"><i>in berlin</i></div>
           <div class="area-header-line text-align--center"></div>
@@ -167,7 +167,7 @@
         </div>
       </div>
     </section>
-    <section class="section-g">
+    <section class="section-g" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
       <div class="pic pic-80">
         <img src="src/img/berlin/1.jpg" alt="베를린스냅">
       </div>
@@ -205,7 +205,7 @@
       <div class="pic pic-100">
         <img src="src/img/berlin/25.jpg" alt="베를린스냅">
       </div>
-      <div class="container text-align--center">
+      <div class="container text-align--center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
         <div class="illust">
           <img src="src/img/soimbk-1.png" alt="bk&soim 일러스트">
         </div>
@@ -213,15 +213,15 @@
       </div>
     </section>
     <section class="section-g">
-      <div class="container text-align--center">
+      <div class="container text-align--center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
         <div class="area-header-line"></div>
         <h3>special thanks to</h3>
         <p>
           값비싼 렌즈를 빌려준 신부 아버님
-          <br> 사진을 찍어준 <a href="http://instagram.com/bam.kim" target="_blank" class="linktext">범주씨</a> 그리고 <a href="http://instagram.com/keemgeewook" target="_blank" class="linktext">지욱작가님</a>
-          <br> 부케를 만들어준 <a href="http://instagram.com/florist_yujin" target="_blank" class="linktext">유진이</a>
+          <br> 사진을 찍어준 <a href="http://instagram.com/bam.kim" target="_blank" class="linktext" onclick="ga('send','event','insta_bj', 'click', 'insta_bj');">범주씨</a> 그리고 <a href="http://instagram.com/keemgeewook" target="_blank" class="linktext">지욱작가님</a>
+          <br> 부케를 만들어준 <a href="http://instagram.com/florist_yujin" target="_blank" class="linktext" onclick="ga('send','event','insta_yujin', 'click', 'insta_yujin');">유진이</a>
           <br> 촬영을 도와준 형윤, 유리, 승선, 패트릭
-          <br> 일러스트를 그려준 <a href="http://instagram.com/sunlee_art" target="_blank" class="linktext">승선이</a>
+          <br> 일러스트를 그려준 <a href="http://instagram.com/sunlee_art" target="_blank" class="linktext" onclick="ga('send','event','insta_sun', 'click', 'insta_sun');">승선이</a>
           <br><br><br>
         </p>
       </div>
@@ -236,8 +236,6 @@
   </main>
   <script src="public/master.js"></script>
   <script src="src/analytics.js"></script>
-  <!-- <script src="src/demo3.js"></script>
-  <script src="src/easings.js"></script> -->
 </body>
 
 </html>
