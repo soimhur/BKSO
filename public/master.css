@@ -741,7 +741,8 @@ img {
 
 .local-header {
   position: fixed;
-  padding: 1em 1.5em; }
+  padding: 1em 1.5em;
+  z-index: 999; }
   .local-header > a {
     width: 2em;
     font-size: 1.25em; }

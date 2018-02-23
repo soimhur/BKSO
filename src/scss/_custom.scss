@@ -333,6 +333,7 @@
 .local-header {
   position: fixed;
   padding: 1em 1.5em;
+  z-index: 999;
   >a {
     width: 2em;
     font-size: 1.25em;
