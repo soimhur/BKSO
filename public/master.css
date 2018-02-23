@@ -451,7 +451,6 @@ body {
 
 main {
   width: 100%;
-  max-width: 500px;
   margin: 0 auto; }
 
 /* PADDING */
@@ -487,7 +486,7 @@ img {
   padding: 1.5em 0; }
 
 .container {
-  max-width: 960px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 1rem; }
 
@@ -573,6 +572,15 @@ img {
     .main-type svg:nth-child(2) {
       margin-top: -2.5em;
       margin-right: -0.5em; }
+  @media screen and (min-width: 768px) {
+    .main-type {
+      width: 60%;
+      top: 10%; }
+      .main-type svg:nth-child(1) {
+        margin-left: -2em; }
+      .main-type svg:nth-child(2) {
+        margin-top: -8em;
+        transform: translateX(60%); } }
 
 .position-parent {
   position: relative; }
