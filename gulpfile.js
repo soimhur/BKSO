@@ -36,7 +36,9 @@ gulp.task("build-js", function() {
         config.vendor + "jquery/dist/jquery.js",
         config.vendor + "swiper/dist/js/swiper.js",
         config.vendor + "aos/dist/aos.js",
+        "src/custom-aos.js",
         "src/custom.js",
+        "src/analytics.js",
       ]
     )
     .pipe(concat("master.js"))

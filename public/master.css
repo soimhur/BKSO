@@ -375,14 +375,6 @@ th {
 
 /* COLORS */
 /* COLORS */
-/* IMPORT FONTS */
-@font-face {
-  font-family: 'open-arrow';
-  src: url("src/font/OpenArrow-Regular.eot") format("embedded-opentype"), url("src/font/OpenArrow-Regular.woff2") format("woff2"), url("src/font/OpenArrow-Regular.woff") format("woff"), url("src/font/OpenArrow-Regular.otf") format("opentype"), url("src/font/OpenArrow-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  unicode-range: U+2190-21ff; }
-
 /* FONT SIZES */
 html {
   font-size: 15px;
