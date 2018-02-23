@@ -769,20 +769,7 @@ img {
   right: 0;
   bottom: 0;
   background-color: #0C1924;
-  color: #FFFFFF;
   z-index: 999; }
-
-#status {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
-  /* centers the loading animation horizontally one the screen */
-  top: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: -100px 0 0 -100px;
-  /* is width and height divided by two */ }
 
 #loader:before {
   content: "";
@@ -790,11 +777,11 @@ img {
   left: 50%;
   top: 50%;
   margin: auto;
-  width: 20px;
-  height: 20px;
-  background-color: #e5b593;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.6);
   animation: flip 1s infinite;
-  perspective: 120px; }
+  perspective: 100px; }
 
 @keyframes flip {
   0% {
