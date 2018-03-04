@@ -365,7 +365,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $main-blue;
+  background-color: $light-grey;
   z-index: 9999;
   width: 100%;
   height: 100%;
@@ -385,7 +385,7 @@
     .lline {
       width: 80px;
       height: 8px;
-      background-color: $light-grey;
+      background-color: $main-blue;
       position: absolute;
       clip: rect(0, 0, 20px, 0);
       &.lline-1 {
@@ -407,7 +407,7 @@
     top: 50px;
     text-align: center;
     width: 100%;
-    color: $light-grey;
+    color: $main-blue;
     font-size: 13px;
     font-family: sans-serif;
     letter-spacing: 3px;
