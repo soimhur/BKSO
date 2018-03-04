@@ -1,6 +1,6 @@
 $(window).on('load', function() {
-  // $('#loader').fadeOut();
-  // $('#preloader').delay(400).fadeOut('slow');
+  $('#loader').fadeOut();
+  $('#preloader').delay(400).fadeOut('slow');
   $('body').delay(400).css({ 'overflow': 'visible' });
 })
 
