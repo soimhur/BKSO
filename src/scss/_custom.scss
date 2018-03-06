@@ -97,7 +97,11 @@
 .main-type {
   position: absolute;
   width: 100%;
-  top: 20%;
+  top: 18%;
+  @media(min-width: 550px) {
+    width: 85%;
+    top: 15%;
+  }
   svg {
     fill: $gold;
     &:nth-child(1) {
@@ -106,6 +110,11 @@
     &:nth-child(2) {
       margin-top: -2.5em;
       margin-right: -0.5em;
+      @media(min-width: 550px) {
+        margin-top: -3em;
+        margin-right: -8em;
+        transform: scale(0.9);
+      }
     }
   }
 }

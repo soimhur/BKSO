@@ -11,15 +11,17 @@ body {
 }
 
 body {
-  background-color: $white;
   color: $main-blue;
-  background-color: #eaeaea;
+  background-color: #efefef;
   -webkit-overflow-scrolling: touch;
+  @media(min-width: 550px) {
+    background-color: #0a1014;
+  }
 }
 
 main {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
 }
 

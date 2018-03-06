@@ -444,14 +444,16 @@ body {
   height: 100%; }
 
 body {
-  background-color: #FFFFFF;
   color: #0C1924;
-  background-color: #eaeaea;
+  background-color: #efefef;
   -webkit-overflow-scrolling: touch; }
+  @media (min-width: 550px) {
+    body {
+      background-color: #0a1014; } }
 
 main {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto; }
 
 /* PADDING */
@@ -565,7 +567,11 @@ img {
 .main-type {
   position: absolute;
   width: 100%;
-  top: 20%; }
+  top: 18%; }
+  @media (min-width: 550px) {
+    .main-type {
+      width: 85%;
+      top: 15%; } }
   .main-type svg {
     fill: #e5b593; }
     .main-type svg:nth-child(1) {
@@ -573,6 +579,11 @@ img {
     .main-type svg:nth-child(2) {
       margin-top: -2.5em;
       margin-right: -0.5em; }
+      @media (min-width: 550px) {
+        .main-type svg:nth-child(2) {
+          margin-top: -3em;
+          margin-right: -8em;
+          transform: scale(0.9); } }
 
 .position-parent {
   position: relative; }
