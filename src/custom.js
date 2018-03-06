@@ -1,7 +1,7 @@
 $(window).on('load', function() {
   $('#loader').fadeOut();
   $('#preloader').delay(400).fadeOut('slow');
-  $('body').delay(400).css({ 'overflow': 'visible' });
+  $('body').delay(400);
 })
 
 $(function() {

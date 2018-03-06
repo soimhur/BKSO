@@ -248,9 +248,8 @@
   &-subtitle {
     font-size: 8px;
     color: #777;
-    letter-spacing: 2.5px;
+    letter-spacing: 3px;
     font-weight: normal;
-    margin-top: 5px;
   }
   .title-pic {
     width: 250px;
@@ -384,7 +383,7 @@
     position: absolute;
     .lline {
       width: 80px;
-      height: 8px;
+      height: 2px;
       background-color: $main-blue;
       position: absolute;
       clip: rect(0, 0, 20px, 0);
@@ -393,18 +392,18 @@
         animation: slide 2s ease 0s infinite;
       }
       &.lline-2 {
-        top: 15px;
+        top: 10px;
         animation: slide 2s ease 0.25s infinite;
       }
       &.lline-3 {
-        top: 30px;
+        top: 20px;
         animation: slide 2s ease 0.5s infinite;
       }
     }
   }
   .loading-text {
     position: absolute;
-    top: 50px;
+    top: 30px;
     text-align: center;
     width: 100%;
     color: $main-blue;
