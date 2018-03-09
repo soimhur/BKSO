@@ -229,6 +229,11 @@
   border-bottom: 1px solid $main-blue;
   font-weight: bold;
 }
+.only-mobile {
+  @media (min-width: 550px) {
+    display: none;
+  }
+}
 
 /////////////////////////////
 ////////  gallery ///////////
